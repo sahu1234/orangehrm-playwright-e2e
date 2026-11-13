@@ -5,6 +5,7 @@
 [[https://img.shields.io/badge/TypeScript-Strict%20Mode-3178C6?logo=typescript&logoColor=white]](https://www.typescriptlang.org/)
 [[https://img.shields.io/badge/Playwright-Cross--Browser-2EAD33?logo=playwright&logoColor=white]](https://playwright.dev/)
 
+
 A production-grade End-to-End test automation framework built with **Playwright** and **TypeScript (strict mode)** targeting the [OrangeHRM Live Demo](https://opensource-demo.orangehrmlive.com/) enterprise HR platform.
 
 > **[View Live Allure Test Report →](https://sahu1234.github.io/orangehrm-playwright-e2e/)** *(auto-deployed on every push to `main` via GitHub Actions)*
