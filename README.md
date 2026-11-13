@@ -11,7 +11,8 @@ A production-grade End-to-End test automation framework built with **Playwright*
 
 ## Demo & Report Preview
 
-[docs/allure-preview.png]
+<img width="952" height="774" alt="AllureReport" src="https://github.com/user-attachments/assets/5c7777b2-db3e-40dc-a7f4-c766b9d73d8c" />
+
 
 ## Architecture Highlights
 
