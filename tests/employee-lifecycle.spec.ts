@@ -4,6 +4,8 @@ import path from 'path';
 import { PimPage } from '../pages/PimPage';
 import { LeavePage } from '../pages/LeavePage';
 import { EmployeeTestData, generateEmployeeData } from '../utils/testData';
+import { attachMilestoneScreenshot } from '../utils/allureHelper';
+
 
 test.describe.serial('OrangeHRM End-to-End Employee Lifecycle', () => {
   let employee: EmployeeTestData;
@@ -29,6 +31,8 @@ test.describe.serial('OrangeHRM End-to-End Employee Lifecycle', () => {
 
     await allure.step(`Create employee ${employee.employeeId} with avatar`, async () => {
       await pimPage.createEmployee(employee, avatarPath);
+      await attachMilestoneScreenshot(page, '1. Employee Created - Personal Details');
+
     });
   });
 
@@ -45,11 +49,16 @@ test.describe.serial('OrangeHRM End-to-End Employee Lifecycle', () => {
       await page.goto('/web/index.php/dashboard/index');
       await leavePage.navigateToAddEntitlements();
       await leavePage.addLeaveEntitlement(employee);
+      await attachMilestoneScreenshot(page, '2a. Leave Entitlement Added');
+      // ...after assignLeave:
+
     });
 
     await allure.step('Assign leave via autocomplete and date range', async () => {
       await leavePage.navigateToAssignLeave();
       await leavePage.assignLeave(employee);
+      await attachMilestoneScreenshot(page, '2b. Leave Assigned');
+
     });
   });
 
@@ -66,6 +75,8 @@ test.describe.serial('OrangeHRM End-to-End Employee Lifecycle', () => {
     await pimPage.navigateToEmployeeList();
     await pimPage.searchByEmployeeId(employee.employeeId);
     await pimPage.verifyEmployeeInTable(employee);
+    await attachMilestoneScreenshot(page, '3. Employee Verified in Dynamic Table');
+
   });
 
   test('Step 4: Teardown — Delete created employee record and verify toast', async ({
@@ -81,5 +92,7 @@ test.describe.serial('OrangeHRM End-to-End Employee Lifecycle', () => {
     await pimPage.navigateToEmployeeList();
     await pimPage.searchByEmployeeId(employee.employeeId);
     await pimPage.deleteEmployeeById(employee.employeeId);
+    await attachMilestoneScreenshot(page, '4. Employee Deleted - Cleanup Complete');
+
   });
 });
