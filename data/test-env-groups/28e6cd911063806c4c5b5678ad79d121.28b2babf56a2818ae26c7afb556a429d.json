@@ -1,1 +1,1 @@
-{"id":"28e6cd911063806c4c5b5678ad79d121.28b2babf56a2818ae26c7afb556a429d","fullName":"auth.setup.ts › authenticate as Admin and persist storageState","name":"authenticate as Admin and persist storageState","status":"failed","testResultsByEnv":{"default":"e84532d852e30f94af48726b2ecc2eb0"}}
+{"id":"28e6cd911063806c4c5b5678ad79d121.28b2babf56a2818ae26c7afb556a429d","fullName":"auth.setup.ts › authenticate as Admin and persist storageState","name":"authenticate as Admin and persist storageState","status":"passed","testResultsByEnv":{"default":"8f9fc74cd4fdf2220a9adcce434e56b4"}}
