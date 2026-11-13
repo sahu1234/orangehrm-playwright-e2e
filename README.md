@@ -1,9 +1,11 @@
 # OrangeHRM End-to-End QA Automation Framework (Playwright + TypeScript)
 
-[[https://github.com/sahu1234/orangehrm-playwright-e2e/actions/workflows/playwright.yml/badge.svg]](https://github.com/sahu1234/orangehrm-playwright-e2e/actions/workflows/playwright.yml)
-[[https://img.shields.io/badge/Allure%20Report-View%20Live-brightgreen?logo=qameta&logoColor=white]](https://sahu1234.github.io/orangehrm-playwright-e2e/)
-[[https://img.shields.io/badge/TypeScript-Strict%20Mode-3178C6?logo=typescript&logoColor=white]](https://www.typescriptlang.org/)
-[[https://img.shields.io/badge/Playwright-Cross--Browser-2EAD33?logo=playwright&logoColor=white]](https://playwright.dev/)
+<p>
+  <a href="https://github.com/sahu1234/orangehrm-playwright-e2e/actions/workflows/playwright.yml"><img src="https://github.com/sahu1234/orangehrm-playwright-e2e/actions/workflows/playwright.yml/badge.svg" alt="Playwright E2E Suite"></a>
+  <a href="https://sahu1234.github.io/orangehrm-playwright-e2e/"><img src="https://img.shields.io/badge/Allure%20Report-View%20Live-brightgreen?logo=qameta&logoColor=white" alt="Live Allure Report"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Strict%20Mode-3178C6?logo=typescript&logoColor=white" alt="TypeScript"></a>
+  <a href="https://playwright.dev/"><img src="https://img.shields.io/badge/Playwright-Cross--Browser-2EAD33?logo=playwright&logoColor=white" alt="Playwright"></a>
+</p>
 
 
 A production-grade End-to-End test automation framework built with **Playwright** and **TypeScript (strict mode)** targeting the [OrangeHRM Live Demo](https://opensource-demo.orangehrmlive.com/) enterprise HR platform.
