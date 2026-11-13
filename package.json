@@ -1,0 +1,21 @@
+{
+  "name": "orangehrm-playwright",
+  "version": "1.0.0",
+  "description": "Production-grade Playwright TypeScript E2E automation framework for OrangeHRM",
+  "scripts": {
+    "test": "playwright test",
+    "test:chromium": "playwright test --project=chromium",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report:allure": "allure generate allure-results -o allure-report && allure open allure-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "allure": "^3.33.0",
+    "allure-js-commons": "^3.14.0",
+    "allure-playwright": "^3.14.0",
+    "typescript": "^5.6.3"
+  }
+}
