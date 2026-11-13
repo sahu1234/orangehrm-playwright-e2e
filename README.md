@@ -1,19 +1,17 @@
 # OrangeHRM End-to-End QA Automation Framework (Playwright + TypeScript)
 
-[[https://github.com/<your-username>/<your-repo-name>/actions/workflows/playwright.yml/badge.svg]](https://github.com/<your-username>/<your-repo-name>/actions/workflows/playwright.yml)
-[[https://img.shields.io/badge/Allure%20Report-View%20Live-brightgreen?logo=qameta&logoColor=white]](https://<your-username>.github.io/<your-repo-name>/)
+[[https://github.com/sahu1234/orangehrm-playwright-e2e/actions/workflows/playwright.yml/badge.svg]](https://github.com/sahu1234/orangehrm-playwright-e2e/actions/workflows/playwright.yml)
+[[https://img.shields.io/badge/Allure%20Report-View%20Live-brightgreen?logo=qameta&logoColor=white]](https://sahu1234.github.io/orangehrm-playwright-e2e/)
 [[https://img.shields.io/badge/TypeScript-Strict%20Mode-3178C6?logo=typescript&logoColor=white]](https://www.typescriptlang.org/)
 [[https://img.shields.io/badge/Playwright-Cross--Browser-2EAD33?logo=playwright&logoColor=white]](https://playwright.dev/)
 
 A production-grade End-to-End test automation framework built with **Playwright** and **TypeScript (strict mode)** targeting the [OrangeHRM Live Demo](https://opensource-demo.orangehrmlive.com/) enterprise HR platform.
 
-> **[View Live Allure Test Report →](https://<your-username>.github.io/<your-repo-name>/)** *(auto-deployed on every push to `main` via GitHub Actions)*
+> **[View Live Allure Test Report →](https://sahu1234.github.io/orangehrm-playwright-e2e/)** *(auto-deployed on every push to `main` via GitHub Actions)*
 
 ## Demo & Report Preview
 
 [docs/allure-preview.png]
-
-*(Tip: Replace `docs/allure-preview.png` with a screenshot of your Allure dashboard or a 10-second `.gif` of `npx playwright test --ui`.)*
 
 ## Architecture Highlights
 
@@ -47,10 +45,3 @@ npm test
 
 # 4. Generate & open interactive Allure Report
 npm run report:allure
-
-
-### 3. Activate the Live Report & Screenshot on GitHub
-
-1. **Add the preview image:** Take a screenshot of your local Allure Report (`npm run report:allure`), save it as `docs/allure-preview.png`, and commit it.
-2. **Push to `main`:** Once the GitHub Actions workflow finishes its first run, it will create a `gh-pages` branch automatically.
-3. **Enable GitHub Pages (one-time):** In your GitHub repo, go to **Settings → Pages → Build and deployment → Branch**, select **`gh-pages`** (`/ (root)`), and click **Save**—your live Allure link in the README will go active within a minute.
